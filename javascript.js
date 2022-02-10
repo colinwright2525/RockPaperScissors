@@ -2,6 +2,18 @@
 
 console.log('Hello World');
 
+const title = document.querySelector('div');
+const btn = document.querySelector('button');
+const res1 = document.querySelector('.result1');
+const res2 = document.querySelector('.result2');
+const res3 = document.querySelector('.result3');
+const res4 = document.querySelector('.result4');
+const res5 = document.querySelector('.result5');
+
+console.log(title);
+console.log(res1);
+
+
 let playerSelection;
 let computerSelection;
 let result;
@@ -106,6 +118,25 @@ function game() {
         console.log(result);
         totalPlayerScore += playerScore;
         console.log(totalPlayerScore);
+        console.log(res1);
+
+
+        if (i === 0) {
+            res1.textContent += (result);
+        }
+        else if (i === 1) {
+            res2.textContent += (result);
+        }
+        else if (i === 2) {
+            res3.textContent += (result);
+        }
+        else if (i === 3) {
+            res4.textContent += (result);
+        }
+        else if (i === 4) {
+            res5.textContent += (result);
+        }
+
     }
     if (totalPlayerScore > 0) {
         gameVerdict = 'Yay! You won!';
@@ -113,8 +144,10 @@ function game() {
     else {
         gameVerdict = 'Oh no, you lost...';
     }
-  document.write(gameVerdict + ' If you had fun, refresh the page to play again!');
-        
+    
+    title.textContent = (gameVerdict + ' If you had fun, click the button to play again!');
+    btn.textContent = ('Play Again!');
+  
 }
 
 
