@@ -8,21 +8,31 @@
         </head>
 
         <body>
-        <div id = 'title'>This is a fun game of rock, paper, scissors against the computer. Best of 5 wins! Click below to play now!</div>
+
+        <div id = 'title'>This is a fun game of rock, paper, scissors against the computer. Best of 5 wins! Click below to choose your fighter!</div>
+        
         <br>
-        <button id = 'clickMe' value = 'Click Me!' onclick = 'game();'>Click Me!</button>
+        <br>
+        <div class = 'buttons'>
+
+            <input class = 'select' id = 'rock' type = 'image' src = 'https://i.guim.co.uk/img/media/c6b1b1d46a3ceecf7f7a8c98be3eca02e20e371a/0_13_4572_2743/master/4572.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=e4bd4ab544ce54afd9c3c55799a494b6'></input>
+
+            <input class = 'select' id = 'paper' type = 'image' src = 'https://cdn.shopify.com/s/files/1/0761/6031/products/4fb4bd_d7e7d24cab4d48009fbaecd3540427ff_600x.jpg?v=1541464156'></input>
+
+            <input class = 'select' id = 'scissors' type = 'image' src = 'https://thumbs.dreamstime.com/b/crazy-scissors-cartoon-vector-illustration-49122138.jpg'></input>
+
+        </div>
         <br>
         <br>
-        <div class = 'result1'>Round 1 result: </div>
+        <div id = 'result'></div>
         <br>
-        <div class = 'result2'>Round 2 result: </div>
+        <div class = 'scoreboard'>
+            <div class = 'score' id = 'human'>Human (you, dumbass):</div>
+            <div class = 'score' id = 'computer'>THE MACHINES:</div>
+        </div>
         <br>
-        <div class = 'result3'>Round 3 result :</div>
-        <br>
-        <div class = 'result4'>Round 4 result :</div>
-        <br>
-        <div class = 'result5'>Round 5 result: </div>
-        <br>
+        <button id = 'reset'>RESTART GAME</button>
+        
         <script type = 'text/javascript' src = 'javascript.js'></script>
 
         </body>
