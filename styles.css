@@ -1,5 +1,46 @@
+html {
+    background-color: darkblue;
+}
+
 #title {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    gap: 48px;
+}
+
+.select {
+    padding: 8px;
+    background-color: black;
+    border-radius: 8px;
+    width: 360px;
+    height: auto;
+}
+
+#result {
+    font-size: 32px;
+    font-weight: 700;
+    color: yellow;
+}
+
+.scoreboard {
+    display: flex;
+    gap: 48px;
+}
+
+.score {
     font-size: 24px;
     font-weight: 700;
-    color: purple;
+    color: white;
+}
+
+#reset {
+    padding: 8px;
+    border-radius: 6px;
+    color: yellow;
+    background-color: lightslategray;
 }
